@@ -349,7 +349,7 @@ a:hover {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #1B1B1B;
 }
 
 #preloader:before {
@@ -357,8 +357,8 @@ a:hover {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #f2f2f2;
-  border-top: 6px solid #0078ff;
+  border: 6px solid #000000;
+  border-top: 6px solid #ff0000;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -518,31 +518,31 @@ a:hover {
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
   background-color: #1B1B1B;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: #ff0000;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #0078ff;
+  background-color: #ff0000;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #0078ff;
+  color: #fff;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #0078ff;
+  color: #ff0000;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #0078ff;
+  color: #ff0000;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -1272,9 +1272,8 @@ a:hover {
 --------------------------------------------------------------*/
 footer {
   text-align: center;
-  color: #fff;
-  padding: 5px 0;
-  background: black;
+  color: rgba(255, 255, 255, 0.185);
+  background: rgba(0, 0, 0, 0.308);
 }
 
 footer .copyright {
@@ -1286,5 +1285,5 @@ footer .credits {
 }
 
 footer .credits a {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.185);
 }
