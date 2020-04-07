@@ -101,7 +101,6 @@
   /*--/ Star Typed /--*/
   if ($('.text-slider').length == 1) {
     var homeDiv = $('#home')
-    // homeDiv.css("backgroundImage", "url(assets/img/intro-bg - Copy.jpg)")
     var typed_strings = $('.text-slider-items').text().split(',');
     var strings = [];
     var backgrounds = [];
@@ -118,23 +117,9 @@
       backSpeed: 30,
       preStringTyped: (pos, self) => {
         homeDiv.css("background-image", backgrounds[pos])
-        console.log("Yay: " + backgrounds[pos])
       },
     });
   }
-
-  /*--/ Testimonials owl /--*/
-  $('#testimonial-mf').owlCarousel({
-    margin: 20,
-    autoplay: true,
-    autoplayTimeout: 4000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1,
-      }
-    }
-  });
 
   // Initiate venobox (lightbox feature used in portofilo)
   $(document).ready(function() {
