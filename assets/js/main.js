@@ -121,9 +121,35 @@
     });
   }
 
-  // Initiate venobox (lightbox feature used in portofilo)
-  $(document).ready(function() {
-    $('.venobox').venobox();
-  });
-
 })(jQuery);
+
+$(document).ready(function() {
+
+  $(document).scroll(function(evt) {
+    
+    var v2 = Math.abs($('#about').position().top - $(window).height()/2);
+    var v1 = $(this).scrollTop();
+    if (v1 > v2) {
+      anime({
+        targets: '#about-left',
+        translateY: -525,
+        duration: 1500,
+        easing: 'easeOutElastic(1, 0.75)',
+        opacity: 1
+      })
+
+      anime({
+        targets: '#about-right',
+        translateY: 525,
+        duration: 1500,
+        easing: 'easeOutElastic(1, 0.75)',
+        opacity: 1
+      })
+    }
+  })
+
+})
+
+
+
+
