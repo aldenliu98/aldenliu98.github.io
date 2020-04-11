@@ -148,6 +148,12 @@
     findVisible('Google');
   })
 
+  $('#badges').on('click', function(e) {
+    if (!($(e.target).is('img'))) {
+      findVisible('about-me');
+    }
+  })
+
 })(jQuery);
 
 $(window).on('beforeunload', function() {
@@ -164,7 +170,7 @@ $(document).ready(function() {
       anime({
         targets: '#about-left',
         translateY: -525,
-        duration: 1500,
+        duration: 1000,
         easing: 'easeOutElastic(1, 0.75)',
         opacity: 1
       })
@@ -172,7 +178,7 @@ $(document).ready(function() {
       anime({
         targets: '#about-right',
         translateY: 525,
-        duration: 1500,
+        duration: 1000,
         easing: 'easeOutElastic(1, 0.75)',
         opacity: 1
       })
