@@ -125,7 +125,10 @@
     var clicked = $('#about-right').find(".blurb:visible")
     if (!clicked.hasClass(target)) {
       clicked.addClass('blurb_hidden')
-      $("." + target).removeClass('blurb_hidden')
+
+      var targetElem = $("." + target);
+      targetElem.removeClass('blurb_hidden')
+      targetElem.addClass('animated')
     }
   } 
 
@@ -146,6 +149,10 @@
   })
 
 })(jQuery);
+
+$(window).on('beforeunload', function() {
+  $(window).scrollTop(0);
+});
 
 $(document).ready(function() {
 
