@@ -121,6 +121,30 @@
     });
   }
 
+  function findVisible(target) {
+    var clicked = $('#about-right').find(".blurb:visible")
+    if (!clicked.hasClass(target)) {
+      clicked.addClass('blurb_hidden')
+      $("." + target).removeClass('blurb_hidden')
+    }
+  } 
+
+  $('.UCBerkeleyBadge').on('click', function() {
+    findVisible('UCBerkeley');
+  })
+
+  $('.IBMBadge').on('click', function() {
+    findVisible('IBM');
+  })
+
+  $('.GSBadge').on('click', function() {
+    findVisible('GoldmanSachs');
+  })
+
+  $('.GoogleBadge').on('click', function() {
+    findVisible('Google');
+  })
+
 })(jQuery);
 
 $(document).ready(function() {
