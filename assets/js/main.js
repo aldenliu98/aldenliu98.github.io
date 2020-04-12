@@ -124,11 +124,14 @@
   function findVisible(target) {
     var clicked = $('#about-right').find(".blurb:visible")
     if (!clicked.hasClass(target)) {
-      clicked.addClass('blurb_hidden')
+      clicked.addClass('blurb_hidden');
 
       var targetElem = $("." + target);
-      targetElem.removeClass('blurb_hidden')
-      targetElem.addClass('animated')
+      targetElem.removeClass('blurb_hidden');
+      targetElem.addClass('animated');
+
+      // var aboutDiv = $('#about');
+      // aboutDiv.css("background-image", "url(assets/img/UCBerkeleyCampus.jpg)");
     }
   } 
 
@@ -169,7 +172,7 @@ $(document).ready(function() {
     if (v1 > v2) {
       anime({
         targets: '#about-left',
-        translateY: -525,
+        translateX: 525,
         duration: 1000,
         easing: 'easeOutElastic(1, 0.75)',
         opacity: 1
@@ -177,7 +180,7 @@ $(document).ready(function() {
 
       anime({
         targets: '#about-right',
-        translateY: 525,
+        translateX: -525,
         duration: 1000,
         easing: 'easeOutElastic(1, 0.75)',
         opacity: 1
