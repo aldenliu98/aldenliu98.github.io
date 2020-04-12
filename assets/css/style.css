@@ -11,6 +11,7 @@
 body {
   background-color: #1B1B1B;
   color: #4e4e4e;
+  overflow-x: hidden;
 }
 
 h1,
@@ -85,6 +86,9 @@ a:hover {
   background-size: cover;
   background-position: center center;
   transition: background 1.0s linear;
+  -webkit-transition: background 1.0s linear;
+  -moz-transition: background-image 1.0s linear;
+  -o-transition: background 1.0s linear;
 }
 
 @media (max-width: 1024px) {
