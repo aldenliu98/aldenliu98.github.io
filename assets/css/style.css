@@ -5,12 +5,17 @@
 * License: https://bootstrapmade.com/license/
 */
 
+:root {
+  --main-color: #E7717D;
+  --secondary-color: #C2CAD0;
+  --accent-color: #C2B9B0;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  background-color: #1B1B1B;
-  color: #4e4e4e;
+  background-color: var(--main-color);
   overflow-x: hidden;
 }
 
@@ -198,7 +203,7 @@ a:hover {
   content: '';
   position: absolute;
   height: 3px;
-  background-color: orange;
+  background-color: var(--accent-color);
   width: 100px;
   bottom: -12px;
 }
@@ -215,7 +220,8 @@ a:hover {
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: rgba(26, 25, 25, 0.151);
+  /* background-color: rgba(26, 25, 25, 0.151); */
+  background-color: var(--secondary-color);
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
@@ -496,11 +502,11 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: yellow;
+  color: var(--accent-color);
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: yellow;
+  background-color: var(--accent-color);
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
@@ -511,11 +517,11 @@ a:hover {
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: yellow;
+  color: var(--accent-color);
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: yellow;
+  color: var(--accent-color);
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -699,7 +705,7 @@ a:hover {
 
 #about {
   font-family: 'Roboto', sans-serif;
-  background-color: rgb(29, 196, 112);
+  background-color: var(--main-color);
   padding: 3rem;
 }
 
