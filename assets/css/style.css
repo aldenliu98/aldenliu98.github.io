@@ -6,9 +6,9 @@
 */
 
 :root {
-  --main-color: #E7717D;
-  --secondary-color: #C2CAD0;
-  --accent-color: #C2B9B0;
+  --main-color: #97F9F9;
+  --secondary-color: #A4DEF9;
+  --accent-color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -702,6 +702,32 @@ a:hover {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+.nabout {
+  height: 100vh;
+  padding: 0;
+  background-color: black;
+}
+
+#about_img {
+  position: absolute;
+  top: 30%;
+  right: 48%;
+  border: 1px solid black;
+}
+
+.parallelogram {
+  width: 12.5vw;
+  height: 100vh;
+  background-color: var(--main-color);
+  transform: skew(165deg);
+  position: absolute;
+  right: 20%;
+}
+
+.parallelogram > * {
+  transform: skew(-165deg);
+}
 
 #about {
   font-family: 'Roboto', sans-serif;
