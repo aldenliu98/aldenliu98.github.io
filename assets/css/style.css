@@ -744,19 +744,19 @@ a:hover {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #ebebeb;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
+  background-color: black;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  background: var(--secondary-color); 
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: var(--secondary-color);
 }
 
 .blurb {
@@ -771,7 +771,7 @@ a:hover {
 
 .pulse_animation {
   animation-name: pulse;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
 @-webkit-keyframes pulse {
