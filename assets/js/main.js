@@ -122,7 +122,7 @@
   }
 
   function findVisible(target) {
-    var clicked = $('#about-right').find(".blurb:visible")
+    var clicked = $('#flex_about_text').find(".blurb:visible")
     if (!clicked.hasClass(target)) {
       clicked.addClass('blurb_hidden');
 
@@ -151,7 +151,7 @@
     findVisible('Google');
   })
 
-  $('#badges').on('click', function(e) {
+  $('.icons_and_blurbs').on('click', function(e) {
     if (!($(e.target).is('img'))) {
       findVisible('about-me');
     }
