@@ -272,20 +272,6 @@ a:hover {
   margin-right: 10px;
 }
 
-/*--/ ico block yea boi /--*/
-.ico-block {
-  height: 75px;
-  width: 75px;
-  margin: 0 auto;
-  /* -webkit-box-shadow: 3px 3px 5px 6px black;  
-  -moz-box-shadow:    3px 3px 5px 6px black;  
-  box-shadow:         3px 3px 5px 6px black;   */
-  display: block;
-  overflow: hidden;
-  background-color: var(--accent-color);
-  cursor: pointer;
-}
-
 .ico-block img {
   height: 100%;
   width: 100%;
@@ -710,6 +696,21 @@ a:hover {
   background-color: black;
 }
 
+.ico-block {
+  height: 75px;
+  width: 75px;
+  margin: 0 auto;
+  /* -webkit-box-shadow: 3px 3px 5px 6px black;  
+  -moz-box-shadow:    3px 3px 5px 6px black;  
+  box-shadow:         3px 3px 5px 6px black;   */
+  display: block;
+  overflow: hidden;
+  background-color: var(--accent-color);
+  cursor: pointer;
+  padding: 0;
+  opacity: 0;
+}
+
 .parallelogram {
   width: 12.5vw;
   height: 100vh;
@@ -717,6 +718,7 @@ a:hover {
   /* transform: skew(165deg); */
   position: absolute;
   right: 20%;
+  opacity: 0;
 }
 
 .icons_and_blurbs {
@@ -735,6 +737,7 @@ a:hover {
   overflow-y: auto;
   overflow-x: hidden;
   -ms-overflow-style: none;
+  opacity: 0;
 }
 
 ::-webkit-scrollbar {

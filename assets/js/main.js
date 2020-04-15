@@ -165,21 +165,18 @@ $(window).on('beforeunload', function() {
 
 $(document).ready(function() {
 
+  var animated_about = false;
+
   $(document).scroll(function(evt) {
-    
-    var v2 = Math.abs($('#about').position().top - $(window).height()/2);
+
     var v1 = $(this).scrollTop();
+    var v2 = Math.abs($('#about').position().top - $(window).height()/5);
 
+    if (!animated_about && v1 > v2) {
 
-    var dankest = anime.timeline({
-      easing: 'easeOutExpo',
-      duration: 750
-    });
+      var dankest = anime.timeline({});
 
-
-    if (v1 > v2) {
       dankest
-      
       .add({
         targets: '#about_deco',
         skew: 165,
@@ -192,8 +189,22 @@ $(document).ready(function() {
         targets: '#about_deco',
         translateX: 100,
         duration: 1500,
-        easing: 'linear'
       }, '-=1000')
+
+      .add({
+        targets: document.querySelectorAll('.ico-block'),
+        opacity: 1,
+        duration: 1000,
+        delay: anime.stagger(100)
+      }, 200)
+
+      .add({
+        targets: '#flex_about_text',
+        opacity: 1,
+        duration: 1000
+      }, 500)
+
+      animated_about = true;
     }
   })
 
