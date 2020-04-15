@@ -714,14 +714,10 @@ a:hover {
   width: 12.5vw;
   height: 100vh;
   background-color: var(--main-color);
-  transform: skew(165deg);
+  /* transform: skew(165deg); */
   position: absolute;
   right: 20%;
 }
-
-/* .parallelogram > * {
-  transform: skew(-165deg);
-} */
 
 .icons_and_blurbs {
   height: 100%;

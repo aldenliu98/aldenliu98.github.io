@@ -169,22 +169,31 @@ $(document).ready(function() {
     
     var v2 = Math.abs($('#about').position().top - $(window).height()/2);
     var v1 = $(this).scrollTop();
+
+
+    var dankest = anime.timeline({
+      easing: 'easeOutExpo',
+      duration: 750
+    });
+
+
     if (v1 > v2) {
-      anime({
-        targets: '#about-left',
-        translateX: 525,
-        duration: 1000,
+      dankest
+      
+      .add({
+        targets: '#about_deco',
+        skew: 165,
+        duration: 2000,
         easing: 'easeOutElastic(1, 0.75)',
         opacity: 1
       })
 
-      anime({
-        targets: '#about-right',
-        translateX: -525,
-        duration: 1000,
-        easing: 'easeOutElastic(1, 0.75)',
-        opacity: 1
-      })
+      .add({
+        targets: '#about_deco',
+        translateX: 100,
+        duration: 1500,
+        easing: 'linear'
+      }, '-=1000')
     }
   })
 
