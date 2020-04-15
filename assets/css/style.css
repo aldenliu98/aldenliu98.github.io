@@ -9,6 +9,7 @@
   --main-color: #97F9F9;
   --secondary-color: #A4DEF9;
   --accent-color: #fff;
+  --pulse-shadow-color: rgba(255, 255, 255, 0.774);
 }
 
 /*--------------------------------------------------------------
@@ -709,6 +710,8 @@ a:hover {
   cursor: pointer;
   padding: 0;
   opacity: 0;
+  border-radius: 5px;
+  border: 1px solid white;
 }
 
 .parallelogram {
@@ -765,6 +768,38 @@ a:hover {
   display: none;
   transition: all 2s linear;
 }
+
+.pulse_animation {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 var(--pulse-shadow-color);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 4px var(--pulse-shadow-color);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 var(--pulse-shadow-color);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 var(--pulse-shadow-color);
+    box-shadow: 0 0 0 0 var(--pulse-shadow-color);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 4px var(--pulse-shadow-color);
+      box-shadow: 0 0 0 4px var(--pulse-shadow-color);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 var(--pulse-shadow-color);
+      box-shadow: 0 0 0 0 var(--pulse-shadow-color);
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Contact

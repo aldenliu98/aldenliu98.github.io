@@ -167,6 +167,14 @@ $(document).ready(function() {
 
   var animated_about = false;
 
+  $('.ico-block').click(function() {
+    $(this).addClass('pulse_animation');
+  });
+
+  $('.ico-block').on('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function() {
+    $(this).removeClass('pulse_animation');
+  });
+
   $(document).scroll(function(evt) {
 
     var v1 = $(this).scrollTop();
