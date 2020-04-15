@@ -113,7 +113,7 @@
       strings: strings,
       typeSpeed: 50,
       loop: true,
-      backDelay: 1000,
+      backDelay: 1500,
       backSpeed: 30,
       preStringTyped: (pos, self) => {
         homeDiv.css("background-image", backgrounds[pos])
