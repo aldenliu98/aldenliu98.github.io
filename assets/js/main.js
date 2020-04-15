@@ -180,7 +180,7 @@ $(document).ready(function() {
       .add({
         targets: '#about_deco',
         skew: 165,
-        duration: 2000,
+        duration: 5000,
         easing: 'easeOutElastic(1, 0.75)',
         opacity: 1
       })
@@ -188,8 +188,8 @@ $(document).ready(function() {
       .add({
         targets: '#about_deco',
         translateX: 100,
-        duration: 1500,
-      }, '-=1000')
+        duration: 5000,
+      }, '-=4000')
 
       .add({
         targets: document.querySelectorAll('.ico-block'),
