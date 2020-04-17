@@ -157,6 +157,18 @@
     }
   })
 
+  $('.linkedin').on('click', function() {
+    window.open('https://www.linkedin.com/in/alden-liu-12212b12a/');
+  })
+
+  $('.github').on('click', function() {
+    window.open('https://github.com/aldenliu98');
+  })
+
+  $('.resume').on('click', function() {
+    window.open('https://www.dropbox.com/s/17n09xx92m4ik11/Alden-Liu-Resume.pdf?dl=0');
+  })
+
 })(jQuery);
 
 $(window).on('beforeunload', function() {
@@ -183,6 +195,7 @@ $(document).ready(function() {
     if (!animated_about && v1 > v2) {
 
       var dankest = anime.timeline({});
+      var icon_holder = document.querySelector('.icons_column').querySelectorAll("ion-icon");
 
       dankest
       .add({
@@ -195,9 +208,27 @@ $(document).ready(function() {
 
       .add({
         targets: '#about_deco',
-        translateX: 100,
+        translateX: -75,
         duration: 5000,
       }, '-=4000')
+
+      .add({
+        targets: icon_holder,
+        translateY: -50,
+        duration: 300,
+        delay: anime.stagger(100),
+        easing: 'cubicBezier(.5, .05, .1, .3)',
+        scale: 1.5,
+      }, 500)
+
+      .add({
+        targets: icon_holder,
+        translateY: 0,
+        duration: 300,
+        delay: anime.stagger(100),
+        easing: 'cubicBezier(.5, .05, .1, .3)',
+        scale: 1.0,
+      }, 1200)
 
       .add({
         targets: document.querySelectorAll('.ico-block'),

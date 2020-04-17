@@ -729,6 +729,37 @@ a:hover {
   width: 60%;
 }
 
+.icons {
+  padding: 0;
+  height: 100%;
+}
+
+.icons_column {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 6%;
+  padding-bottom: 12%;
+}
+
+ion-icon {
+  font-size: 64px;
+}
+
+.linkedin:hover {
+  color: #0e76a8;
+  cursor: pointer;
+}
+
+.github:hover {
+  color: #171515;
+  cursor: pointer;
+}
+
+.resume:hover {
+  color: #f4f3db;
+  cursor: pointer;
+}
+
 .vertical_bois {
   height: 100%;
   width: 40%;
