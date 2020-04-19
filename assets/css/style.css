@@ -16,7 +16,6 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background-color: var(--main-color);
   overflow-x: hidden;
 }
 
