@@ -87,10 +87,10 @@ a:hover {
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  transition: background 1.5s linear;
-  -webkit-transition: background 1.5s linear;
-  -moz-transition: background-image 1.5s linear;
-  -o-transition: background 1.5s linear;
+  transition: background 1.5s ease-in-out;
+  -webkit-transition: background 1.5s ease-in-out;
+  -moz-transition: background-image 1.5s ease-in-out;
+  -o-transition: background 1.5s ease-in-out;
 }
 
 @media (max-width: 1024px) {
